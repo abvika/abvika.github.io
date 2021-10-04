@@ -1,0 +1,21 @@
+.container{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+}
+.text{
+	font-size: 40px;
+	font-weight: 700;
+	color: black;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.text-video{
+	font-size: 30px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 15px;
+}
