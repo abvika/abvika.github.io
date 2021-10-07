@@ -1,0 +1,63 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+		<title>Формы</title>
+		<style>
+			.container{
+				display: block;
+				width: 350px;
+				border: 2px solid;
+				padding:7px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			form input, select{
+				margin-top: 15px;
+			}
+			.text p{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<INPUT type="TEXT" name="Путешествия" maxlength="50" size="20" value="Путешествия">
+		<FORM><H3>Опиши страну, в которой мечтаешь побывать.<br>
+		<TEXTAREA name="ключевое слово" rows=5 cols=30>Область для ввода текста
+		</TEXTAREA></H3>
+		<INPUT type="reset" value="очистка"></FORM>
+		<H3>Выбери город:</H3>
+		<SELECT size 1>
+		<OPTION value=a>Париж</OPTION>
+		<OPTION value=b>Лондон</OPTION>
+		<OPTION value=c>Минск</OPTION>
+		<OPTION value=d>Берлин</OPTION>
+		</SELECT>
+		<div class="text">
+		<p>Задание 2</p>
+		<br>
+		</div>
+		<div class="container">
+		<form>
+			Обращение<input type="radio" name="Обращение"value="Господин">Господин
+			<input type="radio" name="Обращение"value="Госпожа">Госпожа<br>
+			Имя: <input type="text" name="firstname" value=""><br>
+            Фамилия:  <input type="text" name="lastname" value=""><br>
+            Email:  <input type="text" name="lastname" value=""><br>
+            Телефон:  <input type="text" name="lastname" value=""><br>
+            Пароль:  <input type="password" name="lastname" value=""><br>
+            Подтвердите пароль:  <input type="password" name="lastname" value=""><br>
+            Страна:<SELECT size=1>
+			<OPTION selected value=1>Канада</OPTION>
+			<OPTION value=2> Беларусь</OPTION>
+			<OPTION value=3> США</OPTION>
+			<OPTION value=4>Россия</OPTION>
+			<OPTION value=5> Германия</OPTION>
+			</SELECT>
+			<br>
+			<INPUT type="checkbox" name="Я согласен с условиями использования" value="no" >Я согласен с<u> условиями использования</u><br>
+            <input type="submit"value="Зарегистрироваться">
+		</form>
+		</div>
+	</body>
