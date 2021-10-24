@@ -1,0 +1,45 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Позиционирование</title>
+		<style>
+			.absolute{
+			position: absolute; /* Абсолютное позиционирование */
+     		left:150px; /* Положение левого края */
+     		top: 150px; /* Положение верхнего края */
+     		width: 500px; /* Ширина слоя */
+     		background: #d8bfd8; /* Цвет фона */
+     		border: solid 1px #310062;
+     		}
+     		.relative{
+     			position: relative;
+     			left:200px;
+     			top: 100px;
+     			width: 300px;
+     			background-color: #6495ed;
+
+     		}
+     		.fixed{
+     			position: fixed;
+     			width: 200px;
+     			height: 70px;
+     			background-color: red;
+     			right: 100px;
+     		}
+     		.static{
+     			position: static;
+     			width: 400px;
+     			height: 50px;
+     			background-color: orange;
+     		}
+		</style>
+	</head>
+	<body>
+		<div class="absolute">Абсолютное позиционирование</div>
+		<div class="relative">Относительное позиционирование</div>
+		<div class="fixed">Фиксированное позиционирование</div>
+		<div class="static">Статическое позиционирование</div>
+
+	</body>
+	</html>
