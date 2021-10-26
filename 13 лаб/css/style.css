@@ -1,0 +1,52 @@
+.basa{
+	width: 400px;
+	background-color: green;
+	margin: auto;
+}
+h2{
+	font-family: 'Lilita One', cursive;
+	font-size: 18px;
+	text-align: center;
+}
+.cont{
+	background-color: red;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+.forma{
+	width: 300px;
+	background-color: yellow;
+	margin: auto;
+	padding: 10px;
+}
+.cont img{
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin-top: 40px;
+}
+.cont h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	text-align: left;
+}
+.list li{
+	font-size: 20px;
+}
+.list li:first-of-type + li{
+	color: red;
+}
+.main-last .green{
+  color: green;
+}
+
+.container li{
+	list-style: decimal;
+}
+.main-first li, .main-last li{
+	color: red;
+}
+span {
+border: 1px solid black;
+}
