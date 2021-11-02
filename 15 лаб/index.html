@@ -1,0 +1,80 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<title>Тексты и списки</title>
+	<style>
+		.list {
+			max-width: 400px;
+			margin: 0 auto;
+			margin-bottom: 100px;
+			counter-reset: li; 
+			list-style: none; 
+			font: 20px 'Oswald', sans-serif;
+			padding: 0;
+			text-shadow: 0 1px 0 rgba(255,255,255,.5);
+			}
+			.list a {
+			position: relative;
+			display: block;
+			padding: .4em .4em .4em 2em;
+			margin: .5em 0;
+			background: #f6daf0;
+			color: #292425;
+			text-decoration: none;
+			border-radius: .3em;
+			transition: .3s ease-out;
+			}
+			.list a:hover {background: #d2e2fe;}
+			.list a:before {
+			content: counter(li);
+			counter-increment: li;
+			position: absolute;
+			left: -1.3em;
+			top: 50%;
+			margin-top: -1.3em;
+			background: #ffd7d1;
+			height: 2em;
+			width: 2em;
+			line-height: 2em;
+			border: .2em solid white;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 2em;
+			transition: all .3s ease-out;
+			}
+	</style>
+</head>
+<body>
+	<div class="zad1">
+	<p style="letter-spacing: 10pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p style="line-height: 30px;font-size: 12px; width: 200px;">Integer et lectus quis elit finibus bibendum. Pellentesque aliquet, leo vitae laoreet aliquam, felis risus suscipit dolor, et aliquam dolor odio ut quam. Morbi sollicitudin justo vel aliquam molestie.</p>
+	</div>
+	<p style="text-align: left;">Текст слева<br>Nullam tincidunt consequat euismod. Fusce scelerisque massa non enim faucibus, vel tempor arcu elementum. Quisque purus elit, mattis eget ante vel, molestie convallis odio. Proin sed quam et urna sagittis posuere. Phasellus ac velit eget orci fermentum finibus.</p>
+	<p style="text-align: center;">Текст по центру<br>Nullam tincidunt consequat euismod. Fusce scelerisque massa non enim faucibus, vel tempor arcu elementum. Quisque purus elit, mattis eget ante vel, molestie convallis odio. Proin sed quam et urna sagittis posuere. Phasellus ac velit eget orci fermentum finibus.</p>
+	<p style="text-align: right;">Текст справа<br>Nullam tincidunt consequat euismod. Fusce scelerisque massa non enim faucibus, vel tempor arcu elementum. Quisque purus elit, mattis eget ante vel, molestie convallis odio. Proin sed quam et urna sagittis posuere. Phasellus ac velit eget orci fermentum finibus.</p>
+	<br>
+	<h2>Список литературы на лето:</h2>
+	<UL STYLE="list-style-type:square;  ">
+		<LI>"Мастер и Маргарита"</LI>
+		<li>"Евгений Онегин"</li>
+		<li>"Горе от ума"</li>
+	</UL>
+	<UL STYLE="list-style-type:circle; ">
+		<LI>"Анна Каренина"</LI>
+		<li>"Отрочество"</li> 
+	</UL>
+	<br>
+	<h1 style="text-align: center;">ТОП-3 лучших университетов страны!</h1>
+	<ol class="list">
+	  <li><a href="#">АУпПРБ</a></li>
+	  <li><a href="#">БНТУ</a></li>
+	  <li><a href="#">БГУ</a></li>
+	</ol>
+
+
+	
+</body>
+</html>
