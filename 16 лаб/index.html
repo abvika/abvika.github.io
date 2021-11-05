@@ -1,0 +1,96 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+	<title>Селекторы</title>
+	<style>
+		*{
+			padding:0px;
+			margin:10px;
+			font-family: 'Roboto', sans-serif;
+			margin: 0 auto;
+			border:3px black;
+		}
+		h1{
+			font-size: 40px;
+			text-align: center;
+		}
+		.second{
+			background-color: blue;
+			text-align: center;
+		}
+		#id{
+			height: 50px;
+			text-align: right;
+			font-size: 20px;
+			background-color: green;
+		}
+		.second, #id{
+			border-color: black;
+			border-radius: 10px;
+		}
+		.container{
+			width: 700px;
+			height: 500px;
+			background-color: #dff1e4;
+		}
+		.container .block-out{
+			width:500px;
+			height: 500px;
+			background-color: #d2e2fe;
+		}
+		.block-in{
+			width:200px;
+			height: 200px;
+			background-color: #f6daf0;
+		}
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			color: #4f4245;
+			font-weight: 500;
+		}
+		a:hover{
+			color: #1bead9;
+		}
+		.after::after{
+			content:" (after)";
+		}
+		ul{
+			margin-left: 50px;
+		}
+		h2+p{
+			background-color: #ffba6a;
+		}
+	</style>
+</head>
+<body>
+	<h1>Селекторы</h1>
+	<div class="second">
+		Использование Селекторов класса
+	</div>
+	<div id="id">
+		Использование Селекторов ID
+	</div>
+	<div class="container">
+		<div class="block-out">
+			Использование селекторов атрибутов, селекторов потомков, нижележащих и смежных одноуровневых
+			<div class="block-in">
+				<a class="touch" href="#">При наведении изменяет цвет (псевдо-класс hover)
+				</a>
+			</div>
+			<ul>
+				<li>Использвание</li>
+				<li class="after">Псевдо-элементов</li>
+			</ul>
+			<div class="sostav">
+				<h2> Сложные селекторы</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa ipsum, lobortis dictum nibh sit amet, aliquet pharetra ante. Duis sollicitudin massa eu elit consectetur, quis interdum turpis rhoncus. Nulla ultricies sed mauris ac semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eu ante non nisl tempor malesuada sed sit amet arcu. Aliquam pulvinar tempor velit vel congue. Quisque feugiat blandit lectus non tempor.</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
