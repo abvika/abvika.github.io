@@ -1,0 +1,115 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.animation{
+			width: 20%;
+			height: 20%;
+			background-color: #EE82EE;
+			animation: mymove 2s infinite;
+			text-align: center;
+		}
+		@keyframes mymove {
+      0%   { top: 0px; left: 0px; background: #EE82EE; }
+      25%  { top: 0px; left: 530px; background: #DDA0DD; }
+      50%  { top: 100px; left: 530px; background: #483D8B; }
+      75%  { top: 100px; left: 0px; background: #483D8B; }
+      100% { top: 0px; left: 0px; background: #800080; }
+    }
+
+    .transition{
+    	width: 300px;
+    	height: 200px;
+    	margin: auto;
+    	background-color: #FFA07A;
+    	transition: 2s;
+    	text-align: center;
+    	border: 5px double #FFFF00;
+
+    }
+    .transition:hover{
+    	width: 350px;
+    	height: 250px;
+    	background-color: #FF4500;
+    }
+
+    .out{
+    	width: 13cm;
+    	height: 10cm;
+    	background-color: #F08080;
+    	margin: 40px;
+    	padding: 30px 20px;
+    	border: 5px inset #8B0000;
+    }
+    .in{
+    	width: 7cm;
+    	height: 6cm;
+    	background-color: #98FB98;
+    	text-align: center;
+    	border: 3px dashed #006400;
+    }
+    table{
+     border:3px solid #808000;
+     empty-cells: hide;
+     background-color: #8FBC8F;
+    }
+    div+table{
+    	color: green;
+    }
+    a:link{
+    	color: #FF0000;
+    	font-size: 40px;
+    	margin:50px 100px 0px;
+    }
+    a:visited{
+    	color: #008000;
+    }
+    p::first-letter{
+    	font-size: 30pt;
+    	color: red;
+    }
+    div>p{
+    	margin: 0;
+    	padding: 0;
+    }
+
+	</style>
+</head>
+<body>
+	<div class="po_umolch" style="background-color: #00BFFF";>
+		<h1>Использование </h1>
+		<h3>стилей</h3>
+		<h5>по умолчанию</h5>
+	</div>
+	<div class="animation">
+		Анимация
+	</div>
+	<div class="transition">
+		Наведите на квадрат, чтобы увидеть применение трансформации
+	</div>
+	<div class="out">
+		<div class="in">
+			Использование внутренних и внешних отступов
+		</div>
+	</div>
+	<table>
+		<caption>Таблица</caption>
+		   <tr>
+		    <th>Россия</th>
+			</tr>
+			<tr>
+		    <th>Великобритания</th>
+			</tr>
+			<tr>
+		    <th>Европа</th>
+			</tr>
+	</table>
+	<a href="#">Нажми на ссылку</a>
+	<div class="text">
+		<p>Данный пример показывает</p>
+		<p>как меняются первые буквы тега "p"</p>
+		<p>благодаря использованию псевдо-элемента ::first-letter. </p>
+	</div>
+</body>
+</html>
