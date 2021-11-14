@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100%;
+
+}
+.footer{
+	width: 100%;
+	height: 50px;
+}
+.footer_text a{
+	font-family: 'Praise', cursive;
+	font-size: 28px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 70px;
+	text-decoration: none;
+	color: black;
+	
+}
+.section1{
+	width: 100%;
+	height: 100%;
+}
+.left_block{
+	width: 300px;
+	height: 500px;
+	background-color: #dabdab;
+	float: left;
+	margin-left: 70px;
+}
+.left_block img{
+	width: 350px;
+	position: relative;
+	top: 40px;
+	border-radius: 50% 20% / 10% 40%;
+	left: 70px;
+	transition: 1s;
+}
+.left_block img:hover{
+	transform: scale(1.1);
+}
+
+.descr{
+	background-color: red;
+	position: relative;
+	
+	width: 700px;
+	height: 170px;
+	margin:0 auto;
+	top: 130px;
+	left: 150px;
+	padding: 10px 5px;
+}
+h1{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+}
+.section2{
+	width: 100%;
+	height: 100%;
+}
+.fon{
+	background: url("../img/камень.jpg");
+
+	height: 400px;
+	padding-left: 150px;
+}
+.block{
+	display: inline-block;
+	width: 250px;
+	height: 350px;
+	background-color: black;
+	border-radius: 20px;
+	border: 5px grey;
+	margin-top: 170px;
+	margin-left: 40px;
+	transform: 2s;
+}
+.block:hover{
+	box-shadow: 0 0 50px red;
+}
+.block img{
+	width: 100px;
+	border-radius: 50%;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.block img:hover{
+	width: 200px;
+	margin: 10px 20px;
+}
+.block p{
+	font-size: 20px;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 30px;
+	margin-left: 10px;
+}
