@@ -1,0 +1,207 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100%;
+
+}
+.footer{
+	width: 100%;
+	height: 50px;
+}
+.footer_text a{
+	font-family: 'Praise', cursive;
+	font-size: 28px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 70px;
+	text-decoration: none;
+	color: black;
+	
+}
+.section1{
+	width: 100%;
+	height: 100%;
+}
+.left_block{
+	width: 300px;
+	height: 500px;
+	background-color: #b9c8f7;
+	float: left;
+	margin-left: 70px;
+}
+.left_block img{
+	width: 320px;
+	position: relative;
+	top: 40px;
+	border-radius: 50% 20% / 10% 40%;
+	left: 70px;
+	transition: 1s;
+}
+.left_block img:hover{
+	transform: scale(1.1);
+}
+
+.descr{
+	background-color: #e56cb9;
+	position: relative;
+	width: 700px;
+	height: 170px;
+	margin:0 auto;
+	top: 15%;
+	left: 12%;
+	padding: 10px 5px;
+}
+h1{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+}
+.section2{
+	width: 100%;
+	height: 100%;
+}
+.fon{
+	background: url("../img/фон.jpg");
+	background-position: center top;
+	height: 400px;
+	padding-left: 15%;
+
+}
+.block{
+	display: inline-block;
+	width: 250px;
+	height: 350px;
+	background-color:white;
+	border-radius: 30px;
+	box-shadow: 1px 1px 1px black;
+	margin-top: 170px;
+	margin-left: 40px;
+	transform: 2s;
+}
+.block:hover{
+	box-shadow: 0 0 50px #ff638c;
+}
+.block img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.block p{
+	font-size: 20px;
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 30px;
+	margin-left: 10px;
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+
+.photo-item1, .photo-item2, .photo-item3{
+	display: inline-block;
+	width: 250px;
+	height: 350px;
+	margin-left: 40px;
+	background-color: #ebc2af;
+	opacity: 1;
+	text-align: center;
+}
+.photo-item1:hover{
+	background: url("../img/бег.jpg") ;
+	background-size: cover;
+	transition: 3s;
+}
+.photo-item2:hover{
+	background: url("../img/учеба.jpg");
+	background-size: cover;
+}
+.photo-item3:hover{
+	background: url("../img/путешествие.jpg");
+	background-size: cover;
+}
+.photo-item1:hover .text-under-photo{
+	opacity: 0;
+}
+.photo-item2:hover .text-under-photo{
+	opacity: 0;
+}
+.photo-item3:hover .text-under-photo{
+	opacity: 0;
+}
+.section3{
+	background-color: #c8fbc8;
+	height: 100%;
+}
+.section3 p{
+	font-size: 26px;
+	padding: 3% 0 1.5%;
+	text-align: center;
+}
+.fon2{
+	padding-left: 15%;
+}
+.text-under-photo{
+	display: inline-flex;
+	margin-top: 40%;
+	font-size: 22px;
+	text-align: center;
+
+}
+.line-h{
+	display: block;
+	float: right;
+	margin:5% 7% 0;
+	background-color: black;
+	width: 30%;
+	height: 3px;
+}
+.line-v{
+	display: block;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 7%;
+	background-color: black;
+	width: 3px;
+	height: 35%;
+}
+.section4{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.section4 img{
+	width: 230px;
+	display: block;
+	float: right;
+	margin-right: 12%;
+	margin-top: 7%;
+}
+.section4 iframe{
+	width: 350px;
+	height: 350px;
+	margin: 10% 0 0 12%;
+}
+.contact{
+	display: inline-block;
+	padding: 5%;
+}
+.contact p{
+	padding: 50% 0;
+}
+.contact a{
+	font-family: 'Praise', cursive;
+	font-size: 28px;
+	text-decoration: none;
+	color: black;
+}
+hr{
+	height: 2px;
+	background-color: black;
+}
