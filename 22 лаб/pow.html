@@ -1,0 +1,12 @@
+<script type="text/javascript">
+	function pow(x, n) {
+	  if (n == 1) {
+	    return x;
+	  } else {
+	    return x * pow(x, n - 1);
+	  }
+	}
+	var x = Number(prompt('Введите число'));
+	var n = Number(prompt('Введите степень'));
+	document.write(pow(x,n));
+</script>
