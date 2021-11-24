@@ -1,0 +1,23 @@
+<html>
+<title>JS</title>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+function hello() {
+    var id;
+    id=window.open("","example","width=600, height=300");
+    id.focus();
+    id.document.open();
+    id.document.write("<h1><form color='blue' face='Lucida Console' size='5'>Здравствуйте! :)</form></h1>");
+    id.document.write("<input type='button' value='Закрыть окно' onclick='window.close();'> </form>");
+    id.document.close();
+}
+</script>
+</head>
+<body>
+<form name="f2">
+<input type="button" onclick="hello();" value="Отправить"/><br /><br />
+<input type="button" value="Нажать"
+    onclick="window.alert('Пожалуйста, нажмите еще раз'); "><br /><br />
+</form>
+</body>
+</html>

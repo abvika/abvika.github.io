@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+  a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+<script type="text/javascript">
+var default_color = "white";
+ 
+ 
+function setDefaultColor(color) {
+  default_color = color;
+  document.bgColor = default_color;
+}
+ 
+function defaultColor() {
+  document.bgColor = default_color;
+}
+</script></script>
+</head>
+<body>
+	<a
+	    onMouseOut = "defaultColor()"
+	    onClick = "setDefaultColor('white');">Белый</a>
+	<a 
+	    onMouseOut = "defaultColor()"
+	    onClick = "setDefaultColor('yellow');">Жёлтый</a>
+	<a 
+	    onMouseOut = "defaultColor()"
+	    onClick = "setDefaultColor('green');">Зелёный</a>
+</body>
+</html>
