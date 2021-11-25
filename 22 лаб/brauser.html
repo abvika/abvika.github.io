@@ -2,7 +2,7 @@
 <html>
 <head>
 <script type="text/javascript">
-  document.write("Вы используете браузер:<br>" + navigator.appName);
+  	document.write("Вы используете браузер:<br>" + navigator.appName);
     document.write("<br><br>");
  
     document.write("Версия Вашего браузера:<br>" + navigator.appVersion);
@@ -21,11 +21,17 @@
         if (minutes < 10) minutes = "0" + minutes;
         if (seconds < 10) seconds = "0" + seconds;
         document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
-       setTimeout(startTime, 5000);
+       setTimeout(startTime, 1000);
    }
 </script>
 </head>
 <body onLoad = 'startTime()'>
     Время на сайте: <b><span id="time"></span></b>
+    <script>
+		function sec() {
+		alert('5 секунд прошло');
+		}
+		setTimeout(sec, 5000);
+	</script>
 </body>
 </html>
