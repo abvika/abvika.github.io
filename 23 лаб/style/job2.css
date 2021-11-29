@@ -1,0 +1,231 @@
+*,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.section1{
+	width: 100%;
+	height: 100%;
+	background:no-repeat 100% url("../img/фон.jpg");
+	text-align: center;
+	background-color: black;
+}
+
+#blink6 {
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0 0 10px #3d7a97;
+}
+
+.small_text{
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.section2{
+	width: 100%;
+	height: 100%;
+}
+.photo-left{
+	display:flex;
+	width: 40%;
+	height: 100%;
+	background:url("../img/left.png") center right;
+	background-size: cover;
+}
+.fon{
+	position: absolute;
+	left: 40%;
+	position: flex;
+	width:60%;
+	height: 30%;
+	background-color: #b9c8f7;
+	text-align: center;
+}
+.desc{
+	display: inline-block;
+	font-size: 80px;
+	font-family: 'Prata', serif;
+	position: relative;
+	top: 40%;
+	z-index: 0;
+}
+.big-desc{
+	position: absolute;
+	left: 40%;
+	margin-top: 12%;
+	width:60%;
+	height: 50%;
+	background-color: white;
+	z-index: 1;
+
+}
+.big-desc p{
+	color: black;
+	font-size: 20px;
+	font-family: 'Prata', serif;
+	text-align: left;
+	line-height: 1.5;
+	margin:50px 120px;
+
+}
+.big-desc hr{
+	margin-left: 10%;
+	text-align: center;
+	width: 75%;
+	height: 2px;
+	background-color: grey;
+}
+
+.attention{
+	padding: 10px 0;
+	margin-left: 10%;
+}
+
+.attention h2{
+	padding-bottom: 5px;
+	display: inline-block;
+	position: absolute;
+}
+
+.attention img{
+	display: inline-block;
+	align-items: center;
+	width: 50px;
+	padding: 10px 0 5 7px;
+	margin-right: 20px;
+}
+
+.attention-text{
+	display: block;
+	position: absolute;
+	font-weight: 900;
+	margin-left: 73px;
+	margin-top: -20px;
+}
+
+.fon2{
+	position: absolute;
+	position: flex;
+	width:50%;
+	height: 30%;
+	background-color: #9ed5ae;
+	text-align: center;
+}
+.desc2{
+	display: inline-block;
+	font-size: 40px;
+	font-family: 'Prata', serif;
+	position: relative;
+	top: 45%;
+	z-index: 0;
+}
+.big-desc2{
+	position: absolute;
+	margin-top: 14.5%;
+	width:50%;
+	height: 68%;
+	background-color: white;
+	z-index: 1;
+}
+.big-desc2 ul{
+	margin-top: 80px;
+}
+
+.big-desc2 li{
+	color: black;
+	font-size: 20px;
+	font-family: 'Prata', serif;
+	text-align: left;
+	line-height: 1.5;
+	margin:10px 100px;
+
+}
+
+.photo-right{
+	display:flex;
+	margin-left: 50%;
+	width: 50%;
+	height: 100%;
+	background: url("../img/взаимодействие.png") center;
+	background-size: cover;
+}
+
+/*slider*/
+
+.section3{
+	padding-bottom: 18px;
+}
+
+.components{
+	width: 700px;
+	margin: 70px auto 0;
+	color: black;
+	font-size: 20px;
+	font-family: 'Prata', serif;
+}
+
+.components-cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.components-block{
+	display: inline-block;
+	margin: 50px 20px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 15px;
+	border: 1px solid #c0c0c0;
+	transition: 1s;
+}
+
+.components-block:hover{
+	box-shadow:  0 0 50px gold;
+	border: none;
+}
+
+.components-block img{
+	width: 70px;
+	height: 70px;
+	margin: 20px 0;
+
+}
+
+.components-block-text{
+	font-family: 'Lobster', cursive;
+	font-size: 18px;
+}
+.arrow{
+	display: flex;
+	margin-left: 85%;
+}
+.arrow img{
+	width: 50px;
+	height: 50px;
+}
+.arrow .arrow-hidden{
+	opacity: 0;
+	transition: .4s;
+    transform: scale(0) rotateZ(90deg);
+}
+.arrow:hover .arrow-hidden{
+	opacity: 1;
+	transform: scale(1) rotateZ(0deg);
+}
+
+b{
+	display: block;
+	font-size: 14px;
+	font-family: 'Prata', serif;
+}
