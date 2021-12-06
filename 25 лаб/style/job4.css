@@ -1,0 +1,136 @@
+*,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+}
+
+.section1{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: black;
+	padding-bottom: 10px;
+}
+
+#blink6 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0 0 10px #3d7a97;
+}
+
+.small_text{
+	font-family: 'Amatic SC', cursive;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+.section1 img{
+	height: 450px;
+	background-color: #e8e8e8;
+}
+
+.arrow-hidden{
+	opacity: 0;
+	transition: .4s;
+    transform: scale(0) rotateZ(90deg);
+}
+.arrow:hover .arrow-hidden{
+	opacity: 1;
+	transform: scale(1) rotateZ(0deg);
+}
+
+span{
+	display: block;
+	font-size: 18px;
+	font-family: 'Prata', serif;
+	color: white;
+}
+
+.section2{
+	width: 100%;
+	display: inline-block;
+	background-color: #e8e8e8;
+	align-items: center;
+}
+
+.virtual-grid{
+	display: grid;
+	grid-template-columns: 350px 350px;
+	grid-column-gap: 3.75em;
+	grid-row-gap: 2.7em;
+	margin: 5% 20%;
+}
+.virtual-grid>div{
+	height: 350px;
+	background-color: #fff;
+	border: 1rem solid ;
+	transition: .3s;
+}
+
+.virtual-grid>div:hover{
+	border: 3px solid black;
+}
+
+.text-in-box{
+	padding: 10px 7px;
+	font-family: 'Prata', serif;
+	font-size: 18px;
+}
+
+.section3 p{
+	font-family: 'Lobster', cursive;
+	color: #000;
+	font-size: 18px;
+	padding: 7px 0;
+}
+
+.section3-grid{
+	display: grid;
+	grid-template-rows: 100px 150px;
+	grid-row-gap: 2.7em;
+	margin: 1% 20% 5%;
+}
+.section3-grid>div{
+	background-color: #486eaa;
+	text-align: center;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+}
+
+footer{
+	display: inline-block;
+	text-align: center;
+}
+
+footer img{
+	width: 100%;
+}
+
+.back{
+	display: inline-block;
+	float: left;
+	margin-top: -100px;
+	margin-left: 50px;
+}
+.back img{
+	width: 50px;
+	height: 50px;
+	transform: scale(-1, 1);
+}

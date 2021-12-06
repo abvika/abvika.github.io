@@ -1,0 +1,96 @@
+<form>
+	<p>Демонстрация метода window.alert()</p>
+	<input type="button" value="Tип навигатора" 
+	    onclick="window.alert(window.navigator.userAgent); ">
+</form>
+<form>
+	<br>
+	<p>Демонстрация метода window.confirm()</p>
+		<input type="button" value="Вы счастливы? " 
+		onclick="
+                if (window.confirm('Да!') == true) {
+                    document.forms[1].elements[0].value='Да';
+                } else {
+                    document.forms[1].elements[0].value='Нет';
+                }
+		    "/>
+		</br>
+</form>
+<form>
+	<br>
+	<p>Демонстрация метода window.prompt()</p>
+	<input type="button" value="Открыть окно ввода" 
+		onclick="document.forms[2].elements[1].value=window.prompt('Введите сообщение'); " >
+	<input size="30" >
+</form>
+<form>
+	<br>
+	<p>Демонстрация метода window.open()</p>
+	<input type="button" value="Новое окно" 
+	    onclick="window.open('about:blank', 'test1', 'directories=no, height=200, location=no, menubar=no, resizable=no, scrollbars=no, status=no, toolbar=no, width=200'); " />
+</form>
+
+<script language="JavaScript" type="text/JavaScript">
+function myfocus(a)
+{
+	id = window.open("", "example", "scrollbars, width=300, height=200");
+	//открываем окно и заводим переменную с указателем на него 
+	//если окно с таким именем существует, то новое окно не создается, 
+	//а открывается поток для записи в окно с этим именем
+	if (a == 1) {
+	    id.document.open();
+	    //открываем поток ввода в уже созданное окно
+	    id.document.write("<center>Открыли окно в первый раз");
+	    //Пишем в этот поток
+	}
+	if (a == 2) {
+        id.document.open();
+        id.document.write("<center>Открыли окно во второй раз");
+    }
+    if (a == 3) {
+	    id.focus();
+	    //передаем фокус, затем выполняем те же действия, что и в
+	    //предыдущем случае
+	    id.document.open();
+	    id.document.write("<center>Открыли окно в третий раз");
+    }
+    id.document.write("<form><input type='button' onclick='window.close(); 'value='Закрыть oкнo'/></<center>");
+    id.document.close();
+}
+</script>
+</head>
+<form>
+	<br>
+	<p>Демонстрация метода window.focus()</p>
+	<input type="button" value="Страница 1" onclick="myfocus(1);" /><br />
+	<br>
+	<input type="button" value="Страница 2" onclick="myfocus(2);" /><br />
+	<br>
+	<input type="button" value="Страница 3" onclick="myfocus(3);" /><br />
+</form>
+
+<script language="JavaScript" type="text/JavaScript">
+    var idp1 = null;
+    function startX() {
+        d = new Date();
+        window.document.c1.f1.value =
+	    d.getHours() + ": " + d.getMinutes() + ": " + d.getSeconds();
+        idp1 = setTimeout("startX(); ", 500);
+    }
+
+    function stop() {
+        clearTimeout(idp1);
+        idp1 = null;
+    }
+
+</script>
+</head>
+<form name="c1">
+	<p>Демонстрация метода window.setTimeout и window.clearTimeout()</p>
+Текущее время: 
+	<input name="f1" size="8" />
+	<input type="button" value="Start" onclick="if(idp1 == null) startX(); " />
+	<input type="button" value="Stop" onclick="if(idp1 != null) stop(); " />
+</form>
+
+</html>
