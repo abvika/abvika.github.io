@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link type="text/css" rel="stylesheet" 
+	href="MyStyleMeny02.css">
+<head>
+    <title></title>
+</head>
+<body>
+
+<!--тело меню-->
+<div id="menu_body">
+   <ul id="ul1">
+          <img style="margin-top: 5px;" src="img/три.png"><li style="list-style-type:none; font-size: 20px;"><a href="#"><b>Сладости</b></a>
+                <ul>
+                    <li><a href="#">Торт</a></li>
+                    <li><a href="#">Пончик</a></li>
+                    <li><a href="#">Пирожное</a></li>
+                    <li><a href="#">Шоколадка</a></li>
+                    <li><a href="#">Мороженое</a></li>
+                </ul>
+         </li>
+
+
+   </ul>
+</div>
+</body>
+</html>
+ 
+<style type="text/css">
+/*уберем подменю*/
+#menu_body li ul{display:none}
+
+/*Используя псевдокласс hover, 
+сделаем подменю видимым при наведении мыши*/
+#menu_body li:hover ul, #menu_body li.over ul{
+	display: block
+	}
+	
+#menu_body{
+	width:200px;
+	display: inline-block;
+	}
+
+#menu_body img{
+	width: 20px;
+	transform: rotate(90deg);
+	float: left;
+	margin-left:-40px;
+}
+
+#menu_body:hover img{
+	transform: rotate(180deg);
+}
+
+#menu_body ul li{
+	border-bottom:1px solid #fff;
+	margin-left:-25px;
+	padding-left:7px
+	}
+
+#menu_body ul li a{
+	color:#000;
+	font-family:verdana,arial,sans-serif;
+	text-decoration:none
+	}
+	
+#menu_body ul li ul li{
+	border:0;
+	list-style-type:disc;
+	color:#000;
+	list-style-position:inside
+	}
+	
+#menu_body ul li ul{
+	border-top:1px solid #fff;
+	margin-left:-7px;
+	padding-left:50px
+	}
+ </style>
+<script type="text/javascript">
+startList = function() {
+    if (document.all && document.getElementById) {
+        navRoot = document.getElementById("ul1");
+        for (i = 0; i < navRoot.childNodes.length; i++) {
+            node = navRoot.childNodes[i];
+            if (node.nodeName == "LI") {
+                node.onmouseover = function() {
+                    this.className += " over";
+                }
+                node.onmouseout = function() {
+                    this.className = this.className.replace(" over", "");
+                }
+            }
+        }
+    }
+}
+window.onload = startList;
+</script>

@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link type="text/css" rel="stylesheet" 
+	href="MyStyleMeny02.css">
+<head>
+    <title></title>
+</head>
+<body>
+<script language="javascript" 
+    type="text/javascript"
+    src="my_menu02.js">
+</script> 
+
+<div>
+
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Links</a></li>
+    <li><a href="#">Contacts</a></li>
+</ul>
+
+</div>
+</body>
+</html>
+ 
+<style type="text/css">
+ul li{
+	list-style-type:none;
+	display:inline;
+	}
+/*Поскольку мы не можем использовать блочные свойства 
+стилей для inline элементов, сделаем из тега a блочный элемент, 
+а чтобы они выстроились в одну строку, 
+добавим свойство float:left*/	
+li a{
+	display:block;
+	float:left
+	}	
+/*описываем стили для текста ссылок*/
+li  a{
+	font-family:Tahoma,Helvetica,sans-serif;
+	text-decoration:none;
+	color:#fff
+	}
+/*добавляем внутренние отступы и фон для ссылки*/
+li a{
+	display:block;
+	float:left;
+	padding:7px 15px;
+	background:green;
+	}
+/*описываем псевдокласс hover*/
+li a:hover{
+	background:#013220;
+	padding:10px 20px;
+	position:relative;
+	top:-3px
+	}
+</style>
