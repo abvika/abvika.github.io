@@ -1,0 +1,31 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+	img{
+		width: 300px;
+	}
+</style>
+<script language="javascript"
+    type="text/javascript">
+    var flag = 0;
+function ichange() {
+    if (flag == 0) {
+        document.i1.src = "img/4.jpg";
+        flag = 1;
+    }
+    else {
+        document.i1.src = "img/5.jpg";
+        flag = 0;
+    }
+}
+</script>
+</head>
+<body>
+<p><a href="javascript: ichange(); void(0); ">
+<img name="i1" src="img/4.jpg"></a>
+<img src="img/2.jpg"
+onmouseout="this.src='img/2.jpg'"
+onmouseover="this.src='img/3.jpg'"></p>
+</body>
+</html>
